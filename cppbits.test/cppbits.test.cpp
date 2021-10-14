@@ -1,7 +1,11 @@
 #include "pch.h"
 #include "CppUnitTest.h"
 
+import PhoneKeypadLetterCombinations;
+
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+
+using namespace cppbits::algos;
 
 namespace cppbitstest
 {
@@ -11,7 +15,7 @@ namespace cppbitstest
 		
 		TEST_METHOD(TestMethod1)
 		{
-			Assert::AreEqual(1, 1);
+			Assert::IsTrue(GetNumberGreaterThanZero() > 0);
 		}
 	};
 }
