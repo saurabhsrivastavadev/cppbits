@@ -1,12 +1,14 @@
 #include "pch.h"
 #include "CppUnitTest.h"
+
 #include <string>
-#include <iostream>
+#include <vector>
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace std;
+using namespace cppbits::stringalgos::PhoneKeypadLetterCombinations;
 
-import PhoneKeypadLetterCombinations;
+import StringAlgos;
 
 namespace cppbitstest
 {
@@ -16,8 +18,7 @@ namespace cppbitstest
 
         TEST_METHOD(TestMethod1)
         {
-            cppbits::algos::PhoneKeypadLetterCombinations pk;
-            vector<string> res = pk.letterCombinations("2");
+            vector<string> res = getAllLetterCombinations("2");
             Assert::AreEqual(3, (int)res.size());
         }
     };

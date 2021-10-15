@@ -29,7 +29,10 @@
     <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PhoneKeypadLetterCombinations.ixx">
+    <ClCompile Include="PhoneKeypadLetterCombinations.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StringAlgos.ixx">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
