@@ -16,7 +16,7 @@ namespace cppbitstest
 
         TEST_METHOD(TestMethod1)
         {
-            using namespace cppbits::stringalgos::PhoneKeypadLetterCombinations;
+            using namespace cppbits::algos::str::PhoneKeypadLetterCombinations;
 
             vector<string> res = getAllLetterCombinations("2");
             Assert::AreEqual(3, (int)res.size());

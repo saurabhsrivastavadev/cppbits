@@ -5,51 +5,54 @@
 module StringAlgos;
 
 namespace cppbits {
-    namespace stringalgos {
-        namespace PhoneKeypadLetterCombinations {
+    namespace algos {
+        namespace str {
 
-            using namespace std;
+            namespace PhoneKeypadLetterCombinations {
 
-            class PhoneKeypadLetterCombinations {
-            public:
-                vector<string> letterCombinations(string digits) {
+                using namespace std;
 
-                    vector<string> result;
+                class PhoneKeypadLetterCombinations {
+                public:
+                    vector<string> letterCombinations(string digits) {
 
-                    for (int idx = (int)digits.size() - 1; idx >= 0; idx--) {
-                        result = join(numMap_[digits[idx]], result);
+                        vector<string> result;
+
+                        for (int idx = (int)digits.size() - 1; idx >= 0; idx--) {
+                            result = join(numMap_[digits[idx]], result);
+                        }
+
+                        return result;
                     }
 
-                    return result;
-                }
+                private:
+                    vector<string> join(string str, vector<string> vec) {
 
-            private:
-                vector<string> join(string str, vector<string> vec) {
-
-                    vector<string> res;
-                    for (char c : str) {
-                        for (string s : vec) {
-                            res.push_back(c + s);
+                        vector<string> res;
+                        for (char c : str) {
+                            for (string s : vec) {
+                                res.push_back(c + s);
+                            }
+                            if (vec.empty()) {
+                                res.push_back(string(1, c));
+                            }
                         }
-                        if (vec.empty()) {
-                            res.push_back(string(1, c));
-                        }
+                        return res;
                     }
-                    return res;
-                }
 
-            private:
-                unordered_map<char, string> numMap_ = {
-                    {'2', "abc"}, {'3', "def"}, {'4', "ghi"},
-                    {'5', "jkl"}, {'6', "mno"}, {'7', "pqrs"},
-                    {'8', "tuv"}, {'9', "wxyz"}
+                private:
+                    unordered_map<char, string> numMap_ = {
+                        {'2', "abc"}, {'3', "def"}, {'4', "ghi"},
+                        {'5', "jkl"}, {'6', "mno"}, {'7', "pqrs"},
+                        {'8', "tuv"}, {'9', "wxyz"}
+                    };
                 };
-            };
 
-            vector<string> getAllLetterCombinations(string digits) {
+                vector<string> getAllLetterCombinations(string digits) {
 
-                PhoneKeypadLetterCombinations pk;
-                return pk.letterCombinations(digits);
+                    PhoneKeypadLetterCombinations pk;
+                    return pk.letterCombinations(digits);
+                }
             }
         }
     }
