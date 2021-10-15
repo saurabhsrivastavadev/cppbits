@@ -4,6 +4,8 @@
 #include <string>
 #include <unordered_map>
 
+module StringAlgos;
+
 namespace cppbits {
     namespace stringalgos {
         namespace PhoneKeypadLetterCombinations {
