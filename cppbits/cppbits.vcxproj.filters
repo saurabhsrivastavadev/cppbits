@@ -29,5 +29,11 @@
     <ClCompile Include="StringAlgos.ixx">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="StringUtils.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StringUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
