@@ -23,7 +23,7 @@ namespace cppbitstest
             Assert::AreEqual(9, (int)res.size());
 
             string s = printVector<string>(res);
-            Assert::AreEqual(string("ad ae af bd be bf cd ce cf "), s);
+            Assert::AreEqual(string("ad ae af bd be bf cd ce cf"), trim(s));
         }
     };
 }
