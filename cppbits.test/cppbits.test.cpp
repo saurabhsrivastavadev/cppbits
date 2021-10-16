@@ -13,17 +13,17 @@ namespace cppbitstest
     TEST_CLASS(cppbitstest)
     {
     public:
-        TEST_METHOD(TestMethod1)
+        TEST_METHOD(TestPhoneKeypadLetterCombinations)
         {
             using namespace std;
             using namespace cppbits::algos::str::PhoneKeypadLetterCombinations;
             using namespace cppbits::utils::str;
 
-            vector<string> res = getAllLetterCombinations("2");
-            Assert::AreEqual(3, (int)res.size());
+            vector<string> res = getAllLetterCombinations("23");
+            Assert::AreEqual(9, (int)res.size());
 
-            string s = printVector(res);
-            Assert::AreNotEqual(0, (int)s.size());
+            string s = printVector<string>(res);
+            Assert::AreEqual(string("ad ae af bd be bf cd ce cf "), s);
         }
     };
 }
