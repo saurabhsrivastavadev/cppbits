@@ -1,12 +1,8 @@
-module;
+#pragma once
 
 #include <vector>
 #include <string>
 #include <unordered_map>
-
-export module StringAlgos;
-
-using namespace std;
 
 namespace cppbits {
     namespace algos {
@@ -26,7 +22,7 @@ namespace cppbits {
                 /// <returns>
                 /// Vector containing all possible strings based on typed digits
                 /// </returns>
-                export vector<string> getAllLetterCombinations(string digits);
+                std::vector<std::string> getAllLetterCombinations(std::string digits);
             }
         }
     }

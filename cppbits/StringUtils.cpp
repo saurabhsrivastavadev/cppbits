@@ -1,18 +1,14 @@
-module;
+#include "StringUtils.h"
 
 #include <vector>
 #include <string>
 #include <unordered_map>
 
-module CppBits.StringUtils;
-
-using namespace std;
-
 namespace cppbits {
     namespace utils {
         namespace str {
 
-            string printVector(vector<string> vec) {
+            std::string printVector(std::vector<std::string> vec) {
                 return "TODO";
             }
         }

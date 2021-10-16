@@ -3,20 +3,19 @@
 #include <string>
 #include <vector>
 
-using namespace Microsoft::VisualStudio::CppUnitTestFramework;
-using namespace std;
+#include <StringAlgos.h>
+#include <StringUtils.h>
 
-import StringAlgos;
-import CppBits.StringUtils;
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace cppbitstest
 {
     TEST_CLASS(cppbitstest)
     {
     public:
-
         TEST_METHOD(TestMethod1)
         {
+            using namespace std;
             using namespace cppbits::algos::str::PhoneKeypadLetterCombinations;
             using namespace cppbits::utils::str;
 

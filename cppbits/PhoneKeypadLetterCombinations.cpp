@@ -1,10 +1,8 @@
-module;
+#include "StringAlgos.h"
 
 #include <vector>
 #include <string>
 #include <unordered_map>
-
-module StringAlgos;
 
 namespace cppbits {
     namespace algos {

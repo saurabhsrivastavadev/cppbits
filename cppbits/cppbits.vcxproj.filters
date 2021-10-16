@@ -26,14 +26,14 @@
     <ClCompile Include="PhoneKeypadLetterCombinations.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="StringAlgos.ixx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="StringUtils.ixx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="StringUtils.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StringAlgos.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StringUtils.h">
+      <Filter>Header Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
