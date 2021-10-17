@@ -1,5 +1,7 @@
 #pragma once
 
+#include "common.h"
+
 #include <vector>
 #include <string>
 #include <unordered_map>
@@ -22,7 +24,7 @@ namespace cppbits {
                 /// <returns>
                 /// Vector containing all possible strings based on typed digits
                 /// </returns>
-                __declspec(dllexport)
+                DllExport
                 std::vector<std::string> getAllLetterCombinations(std::string digits);
             }
         }

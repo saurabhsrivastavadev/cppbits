@@ -1,4 +1,6 @@
-#pragma once 
+#pragma once
+
+#include "common.h"
 
 #include <vector>
 #include <string>
@@ -14,7 +16,7 @@ namespace cppbits {
             /// <param name="vec"></param>
             /// <returns></returns>
             template <typename T>
-            __declspec(dllexport)
+            DllExport
             std::string printVector(std::vector<T> vec);
 
             /// <summary>
@@ -22,11 +24,11 @@ namespace cppbits {
             /// </summary>
             /// <param name="str"></param>
             /// <returns></returns>
-            __declspec(dllexport)
+            DllExport
             std::string trimLeft(std::string str);
-            __declspec(dllexport)
+            DllExport
             std::string trimRight(std::string str);
-            __declspec(dllexport)
+            DllExport
             std::string trim(std::string str);
         }
     }

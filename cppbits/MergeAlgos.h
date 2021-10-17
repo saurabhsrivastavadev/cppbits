@@ -1,5 +1,7 @@
 #pragma once
 
+#include "common.h"
+
 #include <vector>
 
 namespace cppbits {
@@ -21,7 +23,7 @@ namespace cppbits {
                 /// </summary>
                 /// <param name="lists">Vector of sorted linked lists head pointers.</param>
                 /// <returns>Merged linked list in sorted order.</returns>
-                __declspec(dllexport)
+                DllExport
                 Node* mergeSortedLists(std::vector<Node*>& lists);
             }
         }
