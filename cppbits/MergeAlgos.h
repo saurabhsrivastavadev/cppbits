@@ -6,7 +6,7 @@ namespace cppbits {
     namespace algos {
         namespace merge {
 
-            namespace MergedSortedLinkedLists {
+            namespace MergeSortedLinkedLists {
 
                 struct Node {
                     int val;
@@ -21,6 +21,7 @@ namespace cppbits {
                 /// </summary>
                 /// <param name="lists">Vector of sorted linked lists head pointers.</param>
                 /// <returns>Merged linked list in sorted order.</returns>
+                __declspec(dllexport)
                 Node* mergeSortedLists(std::vector<Node*>& lists);
             }
         }

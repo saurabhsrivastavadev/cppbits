@@ -6,7 +6,7 @@ namespace cppbits {
     namespace algos {
         namespace merge {
 
-            namespace MergedSortedLinkedLists {
+            namespace MergeSortedLinkedLists {
 
                 using namespace std;
 
