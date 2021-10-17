@@ -4,6 +4,7 @@
 #include <vector>
 
 #include <StringAlgos.h>
+#include <MergeAlgos.h>
 #include <StringUtils.h>
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -24,6 +25,14 @@ namespace cppbitstest
 
             string s = printVector<string>(res);
             Assert::AreEqual(string("ad ae af bd be bf cd ce cf"), trim(s));
+        }
+
+        TEST_METHOD(TestMergeSortedLinkedLists)
+        {
+            using namespace std;
+            using namespace cppbits::algos::merge::MergedSortedLinkedLists;
+
+            // todo
         }
     };
 }
