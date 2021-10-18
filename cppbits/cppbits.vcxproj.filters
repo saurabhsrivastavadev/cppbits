@@ -24,6 +24,9 @@
     <ClInclude Include="common.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="LinkedListAlgos.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -42,6 +45,9 @@
       <Filter>Header Files</Filter>
     </ClCompile>
     <ClCompile Include="MergeSortedLinkedLists.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedListReversal.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
