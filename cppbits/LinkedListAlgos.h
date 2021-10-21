@@ -29,6 +29,14 @@ namespace cppbits {
                 /// <param name="portionSize">Portion size in the list to reverse</param>
                 /// <returns>Final list with portions reversed</returns>
                 DllExport Node* reverseLinkedListPortions(Node* head, int portionSize);
+                
+                /// <summary>
+                /// Same as above "reverseLinkedListPortions" API but only using O(1) space
+                /// </summary>
+                /// <param name="head"></param>
+                /// <param name="portionSize"></param>
+                /// <returns></returns>
+                DllExport Node* reverseLinkedListPortionsInO1Space(Node* head, int portionSize);
             }
         }
     }

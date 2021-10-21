@@ -49,6 +49,61 @@ namespace cppbits {
 
                     return nodeList[portionSize - 1 < size ? portionSize - 1 : 0];
                 }
+
+                static void reverseSubList(Node* subListHead, int portionSize,
+                    Node** reversedHead, Node** reversedTail) {
+
+                    Node* current = subListHead;
+                    Node* previous = nullptr;
+                    int count = 0, available = 0;
+
+                    // Look for < k available nodes scenario first 
+                    *reversedHead = subListHead;
+                    *reversedTail = subListHead;
+                    if (*reversedHead == nullptr || *reversedTail == nullptr) return;
+                    while (current != nullptr && ++available < portionSize) {
+                        current = current->next;
+                        *reversedTail = current;
+                    }
+                    if (available < portionSize) return;
+                    Node* nodeAfterSubList = (*reversedTail)->next;
+
+                    // Available nodes > k 
+                    current = subListHead;
+                    while (count++ < portionSize && current != nullptr) {
+
+                        Node* next = current->next;
+                        if (previous == nullptr) {
+                            *reversedTail = current;
+                        }
+                        else {
+                            current->next = previous;
+                        }
+
+                        previous = current;
+                        current = next;
+                    }
+                    *reversedHead = previous;
+                    (*reversedTail)->next = nodeAfterSubList;
+                }
+
+                Node* reverseLinkedListPortionsInO1Space(Node* head, int portionSize) {
+
+                    Node* reversedHead = nullptr;
+                    Node* reversedTail = nullptr;
+
+                    reverseSubList(head, portionSize, &reversedHead, &reversedTail);
+                    Node* result = reversedHead;
+
+                    while (reversedTail != nullptr && reversedTail->next != nullptr) {
+
+                        Node* lastTail = reversedTail;
+                        reverseSubList(reversedTail->next, portionSize, &reversedHead, &reversedTail);
+                        lastTail->next = reversedHead;
+                    }
+
+                    return result;
+                }
             }
         }
     }
