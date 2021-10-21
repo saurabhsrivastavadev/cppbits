@@ -18,5 +18,8 @@
     <ClCompile Include="cppbits.test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="cppbits.searchalgos.test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
