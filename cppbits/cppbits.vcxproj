@@ -167,12 +167,14 @@
     <ClInclude Include="framework.h" />
     <ClInclude Include="LinkedListAlgos.h" />
     <ClInclude Include="MergeAlgos.h" />
+    <ClInclude Include="SearchAlgos.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="LinkedListReversal.cpp" />
     <ClCompile Include="MergeSortedLinkedLists.cpp" />
     <ClCompile Include="PhoneKeypadLetterCombinations.cpp" />
+    <ClCompile Include="SearchInPivotedSortedArray.cpp" />
     <ClCompile Include="StringAlgos.h" />
     <ClCompile Include="StringUtils.cpp" />
     <ClCompile Include="StringUtils.h" />
