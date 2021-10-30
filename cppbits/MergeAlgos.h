@@ -23,8 +23,7 @@ namespace cppbits {
                 /// </summary>
                 /// <param name="lists">Vector of sorted linked lists head pointers.</param>
                 /// <returns>Merged linked list in sorted order.</returns>
-                DllExport
-                    Node* mergeSortedLists(std::vector<Node*>& lists);
+                DllExport Node* mergeSortedLists(std::vector<Node*>& lists);
             }
 
             namespace MergeIntervals {
@@ -35,7 +34,7 @@ namespace cppbits {
                 /// The list of intervals will not be sorted.
                 /// </summary>
                 typedef std::pair<int, int> Interval;
-                std::vector<Interval> mergeIntervals(std::vector<Interval>);
+                DllExport std::vector<Interval> mergeUnsortedIntervals(std::vector<Interval>);
             }
         }
     }

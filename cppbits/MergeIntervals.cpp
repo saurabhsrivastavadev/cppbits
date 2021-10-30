@@ -10,7 +10,7 @@ namespace cppbits {
 
                 using namespace std;
 
-                vector<Interval> mergeIntervals(vector<Interval>& intervals) {
+                vector<Interval> mergeUnsortedIntervals(vector<Interval> intervals) {
 
                     vector<Interval> result;
 
