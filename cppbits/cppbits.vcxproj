@@ -173,6 +173,7 @@
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="LinkedListReversal.cpp" />
+    <ClCompile Include="MergeIntervals.cpp" />
     <ClCompile Include="MergeSortedLinkedLists.cpp" />
     <ClCompile Include="PhoneKeypadLetterCombinations.cpp" />
     <ClCompile Include="SearchInPivotedSortedArray.cpp" />

@@ -62,5 +62,8 @@
     <ClCompile Include="SpiralMatrixTraversal.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MergeIntervals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
