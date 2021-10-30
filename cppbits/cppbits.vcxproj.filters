@@ -65,5 +65,8 @@
     <ClCompile Include="MergeIntervals.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="GroupAnagrams.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

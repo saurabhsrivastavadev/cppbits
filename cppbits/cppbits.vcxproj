@@ -172,6 +172,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="GroupAnagrams.cpp" />
     <ClCompile Include="LinkedListReversal.cpp" />
     <ClCompile Include="MergeIntervals.cpp" />
     <ClCompile Include="MergeSortedLinkedLists.cpp" />
