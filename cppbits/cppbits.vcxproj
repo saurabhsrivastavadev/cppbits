@@ -170,6 +170,7 @@
     <ClInclude Include="MergeAlgos.h" />
     <ClInclude Include="SearchAlgos.h" />
     <ClInclude Include="TraversalAlgos.h" />
+    <ClInclude Include="VectorUtils.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
@@ -180,10 +181,14 @@
     <ClCompile Include="MergeSortedLinkedLists.cpp" />
     <ClCompile Include="PhoneKeypadLetterCombinations.cpp" />
     <ClCompile Include="SearchInPivotedSortedArray.cpp" />
+    <ClCompile Include="VectorUtils.cpp" />
     <ClCompile Include="SpiralMatrixTraversal.cpp" />
     <ClCompile Include="StringAlgos.h" />
     <ClCompile Include="StringUtils.cpp" />
     <ClCompile Include="StringUtils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

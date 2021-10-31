@@ -18,7 +18,7 @@ namespace cppbits {
                 /// </summary>
                 /// <param name="strs"></param>
                 /// <returns>List of list of anagrams grouped together</returns>
-                DllExport std::vector<std::vector<std::string>>
+                CPPBITS_API std::vector<std::vector<std::string>>
                     groupAnagrams(std::vector<std::string>& strs);
             }
 
@@ -32,7 +32,7 @@ namespace cppbits {
                 /// </summary>
                 /// <param name="str"></param>
                 /// <returns>List of all possible IP addresses</returns>
-                DllExport std::vector<std::string> groupIpAddresses(std::string str);
+                CPPBITS_API std::vector<std::string> groupIpAddresses(std::string str);
             }
         }
     }

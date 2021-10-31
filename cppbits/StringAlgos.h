@@ -24,7 +24,7 @@ namespace cppbits {
                 /// <returns>
                 /// Vector containing all possible strings based on typed digits
                 /// </returns>
-                DllExport
+                CPPBITS_API
                 std::vector<std::string> getAllLetterCombinations(std::string digits);
             }
         }

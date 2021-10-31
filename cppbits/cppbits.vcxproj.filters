@@ -36,6 +36,9 @@
     <ClInclude Include="GroupingAlgos.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="VectorUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -74,5 +77,11 @@
     <ClCompile Include="GroupStringIntoIpAddresses.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="VectorUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
 </Project>

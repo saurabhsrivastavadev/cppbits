@@ -16,7 +16,7 @@ namespace cppbits {
             /// <param name="nums"></param>
             /// <param name="target"></param>
             /// <returns></returns>
-            DllExport int searchInPivotedSortedArray(const std::vector<int>& nums, int target);
+            CPPBITS_API int searchInPivotedSortedArray(const std::vector<int>& nums, int target);
         }
     }
 }

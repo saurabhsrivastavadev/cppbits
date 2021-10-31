@@ -24,7 +24,7 @@ namespace cppbits {
                 /// </summary>
                 /// <param name="lists">Vector of sorted linked lists head pointers.</param>
                 /// <returns>Merged linked list in sorted order.</returns>
-                DllExport Node* mergeSortedLists(std::vector<Node*>& lists);
+                CPPBITS_API Node* mergeSortedLists(std::vector<Node*>& lists);
             }
 
             namespace MergeIntervals {
@@ -35,7 +35,7 @@ namespace cppbits {
                 /// The list of intervals will not be sorted.
                 /// </summary>
                 typedef std::pair<int, int> Interval;
-                DllExport std::vector<Interval> mergeUnsortedIntervals(std::vector<Interval>);
+                CPPBITS_API std::vector<Interval> mergeUnsortedIntervals(std::vector<Interval>);
             }
 
             namespace GroupAnagrams {
@@ -46,7 +46,7 @@ namespace cppbits {
                 /// </summary>
                 /// <param name="strs"></param>
                 /// <returns>List of list of anagrams grouped together</returns>
-                DllExport std::vector<std::vector<std::string>> 
+                CPPBITS_API std::vector<std::vector<std::string>>
                     groupAnagrams(std::vector<std::string>& strs);
             }
         }
