@@ -168,6 +168,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cppbits.groupingalgos.test.cpp" />
     <ClCompile Include="cppbits.mergealgos.test.cpp" />
     <ClCompile Include="cppbits.searchalgos.test.cpp" />
     <ClCompile Include="cppbits.test.cpp" />

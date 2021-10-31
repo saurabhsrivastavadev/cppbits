@@ -16,20 +16,16 @@ namespace cppbits {
             /// <param name="vec"></param>
             /// <returns></returns>
             template <typename T>
-            DllExport
-            std::string printVector(std::vector<T> vec);
+            DllExport std::string printVector(std::vector<T> vec);
 
             /// <summary>
             /// Trim the leading and trailing whitespaces from a string.
             /// </summary>
             /// <param name="str"></param>
             /// <returns></returns>
-            DllExport
-            std::string trimLeft(std::string str);
-            DllExport
-            std::string trimRight(std::string str);
-            DllExport
-            std::string trim(std::string str);
+            DllExport std::string trimLeft(std::string str);
+            DllExport std::string trimRight(std::string str);
+            DllExport std::string trim(std::string str);
         }
     }
 }

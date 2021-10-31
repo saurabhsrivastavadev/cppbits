@@ -24,5 +24,8 @@
     <ClCompile Include="cppbits.mergealgos.test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="cppbits.groupingalgos.test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

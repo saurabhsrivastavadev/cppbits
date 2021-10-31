@@ -2,8 +2,10 @@
 
 #include <string>
 #include <vector>
+#include <iostream>
 
 #include <MergeAlgos.h>
+#include <StringUtils.h>
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -26,17 +28,6 @@ namespace cppbitstest
             expectedResult = { {2,4}, {5,5} };
             result = mergeUnsortedIntervals(intervals);
             Assert::IsTrue(expectedResult == result);
-        }
-
-        TEST_METHOD(TestGroupAnagrams)
-        {
-            using namespace std;
-            using namespace cppbits::algos::merge::GroupAnagrams;
-
-            vector<string> strs = { "hey", "hello", "yeh", "leloh", "loleh", "eyh" };
-            vector<vector<string>> expected = { {"hey", "eyh", "yeh"}, {"hello", "leloh", "loleh"} };
-            auto result = groupAnagrams(strs);
-            Assert::IsTrue(expected == result);
         }
     };
 }
