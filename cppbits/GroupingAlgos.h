@@ -21,6 +21,19 @@ namespace cppbits {
                 DllExport std::vector<std::vector<std::string>>
                     groupAnagrams(std::vector<std::string>& strs);
             }
+
+            namespace GroupStringIntoIpAddresses {
+
+                /// <summary>
+                /// Group specified string into IP Addresses that can be created without 
+                /// reordering or replicating any characters from the string.
+                /// Basically just by inserting 3 .[dot]s into the string to create an 
+                /// IP address.
+                /// </summary>
+                /// <param name="str"></param>
+                /// <returns>List of all possible IP addresses</returns>
+                DllExport std::vector<std::string> groupIpAddresses(std::string str);
+            }
         }
     }
 }
