@@ -28,6 +28,18 @@ namespace cppbitstest
             }
             Assert::IsTrue(expected.size() == result.size());
         }
+
+        TEST_METHOD(TestGroupStringIntoIpAddresses)
+        {
+            using namespace std;
+            using namespace cppbits::algos::grouping::GroupStringIntoIpAddresses;
+            using namespace cppbits::utils::str;
+
+            auto result = groupIpAddresses("0111100");
+            Logger::WriteMessage((printVector(result) + "\n").c_str());
+            vector<string> expected = { "0.1.11.100", "0.11.1.100", "0.11.110.0", "0.111.10.0" };
+            Assert::IsTrue(expected == result);
+        }
     };
 }
 
